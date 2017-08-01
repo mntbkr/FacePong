@@ -1,0 +1,13 @@
+<div class="container" ng-app="myApp">
+
+    <div class="row">
+        <div class="col-md-6" ng-controller="GameCtrl">
+            <canvas id="gameBoard" width="400" height="600"></canvas>
+        </div>
+
+        <div class="col-md-6" ng-controller="FaceTrackingCtrl">
+            <video id="faceTrackVideo" width="320" height="240" preload autoplay loop muted></video>
+            <canvas id="faceTrackCanvas" width="320" height="240"></canvas>
+        </div>
+    </div>
+</div>

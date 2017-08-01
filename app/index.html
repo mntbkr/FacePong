@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>FacePong Demo App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+  <ul class="menu">
+    <li><a href="#!/CanvasExperiment">Canvas Experiment</a></li>
+    <li><a href="#!/FacePong">Face Pong</a></li>
+  </ul>
+
+  <div ng-view></div>
+
+  <!--Vendor files-->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+
+  <script src="Vendor/tracking.js/build/tracking.js"></script>
+  <script src="Vendor/tracking.js/build/data/face-min.js"></script>
+  <script src="Vendor/tracking.js/src/alignment/training/Landmarks.js"></script>
+  <script src="Vendor/tracking.js/src/alignment/training/Regressor.js"></script>
+
+  <!--main app-->
+  <script src="app.js"></script>
+
+  <!--Canvas Experiment-->
+  <script src="CanvasExperiment/canvasExperiment.js"></script>
+
+  <!--FacePong -->
+  <!--
+      paddle.js needs to come first in facePong
+      because it declares var's on the global namespace....
+      stupid I know, but I don't know how to fix this yet
+    -->
+  <script src="FacePong/paddle.js"></script>
+  <script src="FacePong/index.js"></script>
+  <script src="FacePong/routes.js"></script>
+  <script src="FacePong/controller.js"></script>
+  <script src="FacePong/gameInput.js"></script>
+  <script src="FacePong/player.js"></script>
+  <script src="FacePong/computer.js"></script>
+  <script src="FacePong/ball.js"></script>
+  <script src="FacePong/gameCanvas.js"></script>
+  <script src="FacePong/faceTrackingController.js"></script>
+
+</body>
+</html>

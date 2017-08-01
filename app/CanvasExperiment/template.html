@@ -1,0 +1,34 @@
+<div class="container" ng-app="myApp" ng-controller="CanvasExperimentCtrl">
+    <div class="row">
+        <canvas class="col-md-8" id="board" width="600" height="275"></canvas>
+        <div class="col-md-4">
+            <form action="" method="POST" class="form-inline" role="form">
+
+                <div class="form-group">
+                    <label class="md-only" for="sq">Square</label>
+                    <input type="color" ng-model="sq" id="sq" /> <label class="md-only" for="sq"><code>{{sq}}</code></label>
+                    <br />
+                    <label class="md-only" for="t1">Triangle 1</label>
+                    <input type="color" ng-model="t1" id="t1" />
+                    <label class="md-only" for="t1"><code>{{t1}}</code></label>
+                    <br />
+                    <label class="md-only" for="t2">Triangle 2</label>
+                    <input type="color" ng-model="t2" id="t2" />
+                    <label class="md-only" for="t2"><code>{{t2}}</code></label>
+                    <br />
+                    <label class="md-only" for="st">Stroke</label>
+                    <input type="color" ng-model="st" id="st" />
+                    <label class="md-only" for="st"><code>{{st}}</code></label>
+                    <br />
+                    <label class="md-only" for="stw">Stroke width</label>
+                    <input type="range" ng-model="stw" min="1" max="30" id="stw" />
+                    <code>{{stw}}</code>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+</div>
