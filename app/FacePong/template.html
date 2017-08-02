@@ -1,13 +1,32 @@
 <div class="container" ng-app="myApp">
-
     <div class="row">
         <div class="col-md-6" ng-controller="GameCtrl">
             <canvas id="gameBoard" width="400" height="600"></canvas>
         </div>
 
         <div class="col-md-6" ng-controller="FaceTrackingCtrl">
-            <video id="faceTrackVideo" width="320" height="240" preload autoplay loop muted></video>
-            <canvas id="faceTrackCanvas" width="320" height="240"></canvas>
+            <div class="row">
+                <video id="faceTrackVideo" width="320" height="240" preload autoplay loop muted></video>
+                <canvas id="faceTrackCanvas" width="320" height="240"></canvas>
+            </div>
+
+            <div class="row">
+                <h1>Instructions</h1>
+            </div>
         </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-12">
+            <h2>Ideas / Todo's</h2>
+            <ul>
+                <li>Add toggle to move between camera and keyboard controls</li>
+                <li>Add difficulty controls, aka easy|medium|hard that will adjust the paddle size</li>
+                <li>add instructions to this page, or its own page</li>
+                <li>refine face tracking controls, it's hard to play right now</li>
+            </ul>
+        </div>
+
     </div>
 </div>
