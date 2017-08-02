@@ -5,7 +5,7 @@
 		.module('FacePong.Game')
 		.config(['$routeProvider', function($routeProvider) {
 			$routeProvider.when('/FacePong', {
-				templateUrl: 'FacePong/template.html',
+				templateUrl: 'FacePong/views/template.html',
 				controller: 'GameCtrl'
 			});
 		}]);
